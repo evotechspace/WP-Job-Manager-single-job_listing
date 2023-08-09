@@ -1,0 +1,221 @@
+.position-meta {
+    width: 80%;
+    float: left;
+}
+
+div.logo {
+    display: inline-block;
+    width: 10%;
+    margin-right: 20px;
+    float: left;
+}
+
+ul.job_listings li.job_listing a div.logo img.company_logo {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    float: none !important;
+    height: auto;
+    left: 0;
+}
+
+.position-meta h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.job-meta {
+    color: #525556;
+    font-size: 15px;
+}
+
+/* job-type colors */
+
+ul.job_listings li.job_listing .position-meta .job-type.internship {
+    background-color: #e6ddfb;
+    color: #6033cc
+}
+
+ul.job_listings li.job_listing .position-meta .job-type.freelance {
+    background-color: #dcf2fd;
+    color: #39c
+}
+
+ul.job_listings li.job_listing .position-meta .job-type.full-time {
+    background-color: #e4f6dd;
+    color: #48bf1e
+}
+
+ul.job_listings li.job_listing .position-meta .job-type.part-time {
+    background-color: #fff6ef;
+    color: #f08d3c
+}
+
+ul.job_listings li.job_listing .position-meta .job-type.temporary {
+    background-color: #ffe2e0;
+    color: #d93674
+}
+
+.position-meta .job-type {
+    display: inline-block;
+    border-radius: 100px;
+    font-size: 11px;
+    padding: 4px 10px;
+    line-height: 1;
+    text-align: center;
+}
+
+span.deadline.dashicons-remove.deadline-today, span.deadline.dashicons-remove.deadline-today:before {
+    color: red;
+}
+
+/* Icons */
+
+span.location:before, span.date:before, span.company:before, span.deadline:before, span.proceed:before {
+    font-family: dashicons;
+    font-weight: 400;
+    font-size: 18px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    padding: 0 5px;
+    vertical-align: bottom;
+}
+
+span.deadline::before {
+    color: #FF9800;
+}
+
+ul.job_listings li.job_listing, .adbox {
+    min-width:100%;
+    box-shadow: 0px 0px 2px #cdcdcd;
+    margin: 10px 0;
+    background: #fff;
+}
+
+ul.job_listings li.job_listing a:hover {
+    box-shadow: 0px 0px 5px #123456;
+    border-radius: 10px;
+}
+
+span.new_job {
+    border: 1px solid #20ace2;
+    padding: 3px;
+    color: #20ace2;
+    font-size: 9px;
+}
+
+.quicklinks p a {
+    border: 1px solid #00aeef;
+    padding: 0 5px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+li.no_job_listings_found table {
+    margin: 0;
+}
+
+ul.job_listings li.job_listing#campoejobs a div.position {
+    padding: 10px;
+    width: 65%;
+}
+
+ul.job_listings li.job_listing#campoejobs a div.position h4 {
+    margin: 5px 0 10px 0;
+}
+
+ul.job_listings li.job_listing#campoejobs a div.position div.location {
+    width: 100%;
+}
+
+ul.job_listings li.job_listing#campoejobs a div.joblogo img.company_logo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    transform: none;
+    left: 0;
+}
+
+.listing-type span {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px;
+}
+
+span.job-type.entry-level {
+    background: #34c159;
+    padding: 3px 10px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+span.job-type.internship {
+    background: #3634c1;
+    padding: 3px 10px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+span.job-type.trainee {
+    background: #8434c1;
+    padding: 3px 10px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+span.job-type.attachment {
+    background: #f44336;
+    padding: 3px 10px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+ul.meta{
+    min-width: 40%;
+}
+
+ul.meta button {
+    font-size: 13px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border: 1px solid blue;
+    background: transparent;
+    color: #123456;
+    border-radius: 0;
+}
+
+.position p {
+    margin: 4px 0;
+    color: #7f8f9f;
+    font-size: 14px;
+}
+
+
+/*---mobile---*/
+
+@media only screen and (max-width:767px){
+
+    .position-meta, span.proceed:after {
+        text-align: center;
+    }
+    
+    .job-meta span {
+        display: block;
+    }
+
+    div.logo{
+        visibility: hidden;
+    }
+    .position-meta, ul.job_listings li.job_listing a .meta, ul.job_listings li.no_job_listings_found a .meta {
+        width: 100%;
+    }
+
+    ul.job_listings li.job_listing a div.logo img.company_logo {
+         margin: 0 auto;
+        display: block;
+        float: none;
+        left: 0;
+        width: auto;
+    }
+}
